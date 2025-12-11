@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+$verde: #00745A;
+$preto: #000000;
+$azul-escuro: #0B0B0B;
+footer{
+    background-color: $azul-escuro;
+    color: white;
+    font-family: "Inter", sans-serif;       
+}
+.footer-contents{
+    padding: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.titulo-footer{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+.titulo-footer p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+.logo-footer{
+    background-color: $verde;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+.email,.telefone,.loc{
+    display: flex;
+    align-items: center;
+}
+.content h3{
+    padding-bottom: 0.5rem;
+}
+.content p{
+    padding: 0.4rem;
+    font-size: 0.9rem;
+}
+.texto-final{
+    text-align: center;
+}
