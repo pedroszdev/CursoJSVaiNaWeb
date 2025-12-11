@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+$verde: #00745A;
+$preto: #000000;
+nav{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.borda{
+    border-bottom: 1px solid $preto;   
+}
+.logo{
+    background-color: $verde;
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.titulo p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $preto;
+}
+.botoes-menu{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.botao-home{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000000;
+}
+.botao-voluntario{
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: $verde;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+}
