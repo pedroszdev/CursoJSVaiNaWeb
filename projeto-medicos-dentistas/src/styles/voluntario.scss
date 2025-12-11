@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+$verde: #00745A;
+$preto: #000000;
+
+.seja-volun{
+    font-family: "Inter", sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 3rem;
+}
+.titulo-volun{
+    text-align: center;
+}
+.titulo-volun h1{
+    font-size: 4rem;
+}
+.titulo-volun p{
+    font-size: 1.4rem;
+}
+.cards-volun{
+    padding-top: 2rem;
+    display: flex;
+    gap: 3rem;
+
+}
+
+.card-volun{
+    text-align: center;
+    border: 1px solid $preto;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+.card-volun h2{
+    font-size: 1.6rem;
+}
+.card-volun p{
+    padding-top: 1rem;
+    font-size: 1.3rem;
+}
+.fundo-verde{
+    background-color: $verde;
+    padding: 3rem;
+}
+.form-volun{
+    font-family: "Inter", sans-serif;
+    max-width: 1200px;
+    margin: 1rem auto;
+    background-color: white;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+}
+.form-volun h3{
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+.form-group{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+input{
+    padding: 15px;
+    border: 1px solid #cfcfcf;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+.metade{
+    width: calc(50% - 8px);
+}
+label{
+    display: block;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+.textarea{
+    padding: 15px;
+    border: 1px solid #cfcfcf;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+}
+.form-volun p{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+button{
+    padding: 1rem 2.5rem; 
+    background-color: $verde; 
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container-botao {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+}

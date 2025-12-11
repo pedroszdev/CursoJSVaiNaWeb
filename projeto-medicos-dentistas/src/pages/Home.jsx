@@ -2,6 +2,7 @@ import frame from "../assets/frame.png";
 import { Link } from "react-router-dom";
 import "../styles/home.scss";
 import estetoscopio from "../assets/estetoscopio.png";
+
 function Home() {
   return (
     <>
