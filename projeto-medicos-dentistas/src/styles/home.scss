@@ -10,16 +10,27 @@ $preto: #000000;
 .main{
     padding: 2rem 3rem ;
     display: flex;
-    gap: 15rem;
+    gap: 5rem;
     align-items: center;
     justify-content: space-between;
     font-family: "Inter", sans-serif;
     max-width: 1400px;
     margin: 0 auto;
+
+    @media (max-width: 850px) {
+        flex-direction: column; // Empilha texto e imagem (se a imagem não estivesse oculta)
+        text-align: center;
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+    }
 }
 .estetoscopio{
     display: flex;
     align-items: center;
+
+    @media (max-width: 850px) {
+        justify-content: center;
+    }
 }
 .estetoscopio p{
     display: flex;
@@ -35,14 +46,31 @@ $preto: #000000;
     font-size: 3.9rem;
     font-weight: bold;
     padding: 1rem 0;
+
+    @media (max-width: 550px) {
+        font-size: 2.5rem; // Diminui a fonte no mobile
+    }
 }
 .texto p{
     font-size: 1.6rem;
+
+    @media (max-width: 550px) {
+        font-size: 1.1rem;
+    }
 }
 .botoes{
     display: flex;
     gap: 2rem;
     margin: 4rem 0;
+
+    @media (max-width: 850px) {
+        justify-content: center; // Centraliza botões
+    }
+
+    @media (max-width: 500px) {
+        flex-direction: column; // Botões um em cima do outro em telas muito pequenas
+        gap: 1rem;
+    }
 }
 .botao-ajudar{
     text-decoration: none;
@@ -52,6 +80,18 @@ $preto: #000000;
     border: 2px solid $verde;
     color: $verde;
 }
+.foto {
+
+    @media (max-width: 1300px) {
+        img{
+            width: 100%;
+        }
+    }
+    @media (max-width: 1100px) {
+        display: none; // A imagem some quando a tela diminui
+    }
+    
+}
 .missao{
     background-color: $verde;
 }
@@ -60,20 +100,40 @@ $preto: #000000;
     margin: 0 auto;
     padding: 3rem 3rem;
     font-family: "Inter", sans-serif;
+
+    @media (max-width: 850px) {
+        padding: 3rem 1.5rem;
+        text-align: center;
+    }
 }
 .titulo-missao{
     color: white;
 }
 .titulo-missao h2{
     font-size: 3rem;
+
+    @media (max-width: 550px) { 
+        font-size: 2.2rem; 
+    }
 }
 .titulo-missao p{
     font-size: 1.3rem;
+
+    @media (max-width: 550px) { 
+        font-size: 1rem; 
+    }
 }
 .cards-missao{
     padding: 2rem 0;
     display: flex;
     gap: 2.5rem;
+    flex-wrap: wrap; 
+    justify-content: center; // Mantém centralizado se quebrar linha
+
+    @media (max-width: 850px) {
+        flex-direction: column; // Empilha totalmente no mobile
+        align-items: center;
+    }
 }
 .card-missao{
     text-align: center;
@@ -81,6 +141,12 @@ $preto: #000000;
     border: 1px solid white;
     border-radius: 0.5rem;
     color: white;
+    flex: 1 1 300px; 
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
 }
 .card-missao h3{
     font-size: 1.7rem;
@@ -96,17 +162,28 @@ $preto: #000000;
     padding: 3rem 3rem;
     font-family: "Inter", sans-serif;
 
+    @media (max-width: 850px) {
+        text-align: center;
+        padding: 3rem 1.5rem;
+    }
+
 }
 .impacto h2{
     font-size: 3rem;
+
+    @media (max-width: 550px) { font-size: 2.2rem; }
 }
 .impacto p{
     font-size: 1.3rem;
+
+    @media (max-width: 550px) { font-size: 1rem; }
 }
 .cards-impacto{
     padding: 3rem 0;
     display: flex;
-    justify-content: space-between;
+    gap: 2rem; 
+    justify-content: center;
+    flex-wrap: wrap;
     
 
 }
@@ -115,6 +192,12 @@ $preto: #000000;
     border: 1px solid $preto;
     border-radius: 1rem;
     padding: 3rem 4rem;
+    flex: 1 1 100px;
+
+    @media (max-width: 550px) {
+        padding: 2rem; // Padding menor em telas pequenas
+        width: 100%;   // Ocupa largura total disponível
+    }
 }
 .card-impacto p{
     font-size: 1.2rem;

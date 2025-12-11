@@ -15,6 +15,11 @@ nav{
     padding: 1rem 3rem;
     max-width: 1400px;
     margin: 0 auto;
+    position: relative;
+
+    @media (max-width: 768px) {
+        padding: 1rem 1.5rem;
+    }
 }
 .borda{
     border-bottom: 1px solid $preto;   
@@ -34,10 +39,48 @@ nav{
     font-weight: bold;
     color: $preto;
 }
+.hamburger {
+    display: none; // Escondido no desktop
+    cursor: pointer;
+    color: $preto;
+
+    @media (max-width: 768px) {
+        display: block; // Aparece no mobile
+    }
+}
 .botoes-menu{
     display: flex;
     gap: 1rem;
     align-items: center;
+    @media (max-width: 768px) {
+        display: none; // Esconde o menu normal no mobile
+        
+        // Quando a classe 'aberto' é adicionada pelo React:
+        &.aberto {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%; // Fica logo abaixo da barra de navegação
+            left: 0;
+            width: 100%; // Ocupa a largura toda
+            background-color: white; // Fundo branco para não ficar transparente
+            padding: 2rem 0;
+            border-bottom: 1px solid $preto;
+            z-index: 100; // Garante que fique por cima do resto do site
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        // Ajuste dos links dentro do menu aberto
+        .botao-home {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .botao-voluntario {
+            width: 80%;
+            text-align: center;
+        }
+    }
 }
 .botao-home{
     text-decoration: none;

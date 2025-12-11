@@ -13,20 +13,38 @@ $preto: #000000;
     max-width: 1400px;
     margin: 0 auto;
     padding: 3rem 3rem;
+
+    @media (max-width: 768px) {
+        padding: 2rem 1.5rem;
+    }
 }
 .titulo-volun{
     text-align: center;
 }
 .titulo-volun h1{
     font-size: 4rem;
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
 }
 .titulo-volun p{
     font-size: 1.4rem;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+        padding: 0 1rem; // Um pouco de margem lateral para não colar na borda
+    }
 }
 .cards-volun{
     padding-top: 2rem;
     display: flex;
     gap: 3rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 
 }
 
@@ -35,6 +53,7 @@ $preto: #000000;
     border: 1px solid $preto;
     border-radius: 0.5rem;
     padding: 2rem;
+    flex: 1
 }
 .card-volun h2{
     font-size: 1.6rem;
@@ -46,6 +65,10 @@ $preto: #000000;
 .fundo-verde{
     background-color: $verde;
     padding: 3rem;
+
+    @media (max-width: 768px) {
+        padding: 2rem 1rem; // Padding menor no mobile
+    }
 }
 .form-volun{
     font-family: "Inter", sans-serif;
@@ -75,7 +98,12 @@ input{
     width: 100%;
 }
 .metade{
-    width: calc(50% - 8px);
+    width: calc(50% - 0.5rem); // Ajuste matemático preciso (metade menos metade do gap)
+
+    // Responsividade: Input ocupa 100% da linha no mobile
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 label{
     display: block;
@@ -83,6 +111,7 @@ label{
     font-weight: bold;
 }
 .textarea{
+    font-family: "Inter", sans-serif;
     padding: 15px;
     border: 1px solid #cfcfcf;
     background-color: #f9f9f9;
@@ -92,6 +121,7 @@ label{
     box-sizing: border-box;
     width: 100%;
     height: 200px;
+    resize: none;
 }
 .form-volun p{
     text-align: center;
@@ -107,6 +137,10 @@ button{
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
+
+    @media (max-width: 500px) {
+        width: 100%; // Botão full width em telas muito pequenas
+    }
 }
 .container-botao {
     width: 100%;

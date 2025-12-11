@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom'
-import { FaHeart } from "react-icons/fa";
+import { FaHeart, FaBars, FaTimes } from "react-icons/fa";
+import { useState } from 'react';
 
 import '../styles/header.scss'
 function Header() {
+    const [menuAberto, setMenuAberto] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuAberto(!menuAberto);
+    };
     return (
         <div className='borda'>
             <nav>
@@ -10,10 +16,18 @@ function Header() {
                     <FaHeart size={24} className='logo' color='white'/>
                     <p>Médicos & Dentistas</p>
                 </div>
-                <div className="botoes-menu">
-                    
-                    <Link to="/" className='botao-home'>Home</Link>
-                    <Link to="/voluntario" className='botao-voluntario'>Seja Voluntário</Link>
+
+                <div className="hamburger" onClick={toggleMenu}>
+                    {menuAberto ? <FaTimes size={24} /> : <FaBars size={24} />}
+                </div>
+
+                <div className={`botoes-menu ${menuAberto ? 'aberto' : ''}`}>
+                    <Link to="/" className='botao-home' onClick={() => setMenuAberto(false)}>
+                        Home
+                    </Link>
+                    <Link to="/voluntario" className='botao-voluntario' onClick={() => setMenuAberto(false)}>
+                        Seja Voluntário
+                    </Link>
                 </div>
             </nav>
         </div>
