@@ -46,3 +46,5 @@ Este projeto foi desenvolvido seguindo restrições específicas para exercitar 
 
 ## 🔗 Deploy
 O projeto está no ar e pode ser acessado através do link:
+
+https://medicos-dentistas-pedro.vercel.app
