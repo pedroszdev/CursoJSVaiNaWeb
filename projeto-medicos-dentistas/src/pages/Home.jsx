@@ -1,4 +1,4 @@
-import frame from "../assets/frame.png";
+import frame from "../assets/Frame.png";
 import { Link } from "react-router-dom";
 import "../styles/home.scss";
 import estetoscopio from "../assets/estetoscopio.png";
