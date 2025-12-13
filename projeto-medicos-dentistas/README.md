@@ -1,16 +1,48 @@
-# React + Vite
+# 🏥 Médicos & Dentistas
+"Cuidar da saúde — do corpo e do sorriso — é essencial para viver bem."
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um portal web desenvolvido como parte de um desafio do curso Vai na Web. O objetivo foi criar uma aplicação moderna, fluida e acolhedora, focada em conectar profissionais de saúde com a comunidade e incentivar o voluntariado.
 
-Currently, two official plugins are available:
+O desenvolvimento seguiu requisitos técnicos rigorosos para garantir o domínio do SCSS  e a estruturação de componentes em React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📱 Sobre o Projeto
+O Médicos & Dentistas é uma plataforma informativa que apresenta:
 
-## React Compiler
+- Uma Página Inicial convidativa, explicando a missão do projeto de oferecer saúde sem barreiras.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Uma área de Voluntariado, com formulário para captação de novos profissionais (médicos e dentistas) interessados em atuar na comunidade.
 
-## Expanding the ESLint configuration
+- Navegação fluida entre seções utilizando rotas.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ - Design responsivo adaptável a dispositivos móveis e desktops.
+
+## 🛠 Tecnologias Utilizadas
+O projeto foi construído utilizando as seguintes tecnologias e bibliotecas:
+
+- React (com Vite): Biblioteca principal para construção da interface.
+
+- React Router DOM: Para gerenciamento de rotas e navegação SPA.
+
+- Sass (SCSS): Pré-processador CSS utilizado para estilização, uso de variáveis e aninhamento.
+
+- React Icons: Para ícones vetoriais leves.
+
+## 🧩 Regras e Desafios Técnicos
+Este projeto foi desenvolvido seguindo restrições específicas para exercitar fundamentos do Front-end:
+
+  - ✅ Uso Obrigatório de Flexbox: Todo o layout foi estruturado utilizando Flexbox para alinhamentos e distribuição de elementos.
+
+  - ✅ Responsividade: Layout adaptável utilizando media queries, unidades relativas (rem, %, vh/vw) e max-width.
+
+  - ✅ Organização SCSS: Uso de aninhamento e variáveis para cores e fontes.
+
+### 🚫 Restrições:
+
+- Proibido o uso de CSS Grid.
+
+- Proibido o uso de Frameworks CSS (Bootstrap, Tailwind, etc.).
+
+- Restrição ao uso de position (foco total no fluxo natural e flexbox).
+
+## 🔗 Deploy
+O projeto está no ar e pode ser acessado através do link:
